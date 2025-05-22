@@ -1,0 +1,27 @@
+@import "bootstrap/scss/bootstrap";
+
+@import "/src/scss/variables/variables.scss";
+
+@import "/src/scss/component/button.scss";
+@import "/src/scss/component/logo.scss";
+@import "/src/scss/component/card.scss";
+
+@import "/src/scss/landingpage/header.scss";
+@import "/src/scss/landingpage/heroSection.scss";
+@import "/src/scss/landingpage/shipsSection.scss";
+@import "/src/scss/landingpage/parrotSection.scss";
+@import "/src/scss/landingpage/eventsSection.scss";
+@import "/src/scss/landingpage/timeLineSection.scss";
+@import "/src/scss/landingpage/footerSection.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

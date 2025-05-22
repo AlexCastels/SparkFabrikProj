@@ -1,0 +1,62 @@
+.timeLineSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 7rem 0px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .timeElementContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .timeElement {
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        color: $secondary;
+        border-radius: 100%;
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+
+    .timeElementLine {
+        width: 6rem;
+        border-top: 1px dashed $secondary;
+    }
+
+    @media (max-width: $screen-xs) {
+        .timeLineSection__container {
+            // display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .timeElementContainer {
+            // display: flex;
+            flex-direction: column;
+        }
+
+        .timeElementLine {
+            height: 2.5rem;
+            width: 1px;
+            border-left: 1px dashed $secondary;
+        }
+    }
+}

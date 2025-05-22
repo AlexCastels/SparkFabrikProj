@@ -1,0 +1,15 @@
+.button {
+    background-color: $primary;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    transition: all 100ms ease-in;
+    &:hover {
+        background-color: $primaryHover;
+        color: $secondary;
+        padding: 0.75rem 1.75rem;
+    }
+}

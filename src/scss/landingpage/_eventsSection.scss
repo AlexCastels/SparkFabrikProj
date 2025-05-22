@@ -1,0 +1,74 @@
+.eventsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    &__contentContainer {
+        // width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__cardContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    &__splideContainer {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #image-slider {
+        width: 100vw;
+        height: 450px;
+    }
+
+    .slideContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .splideArrows {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        
+        &__prev,
+        &__next {
+            height: 3rem;
+            width: 3rem;
+            font-size: 2rem;
+            background-color: white;
+            color: grey;
+            border: none;
+            cursor: pointer;
+            transition: all 100ms ease;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}

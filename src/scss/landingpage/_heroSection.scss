@@ -1,0 +1,43 @@
+.heroSection {
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .heroContent {
+        max-width: 60%;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        h1 {
+            color: black;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+    @media (max-width: $screen-xs) {
+        img {
+            height: 40rem;
+        }
+
+        .heroContent {
+            max-width: 85%;
+        }
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            integrity="sha512-..."
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SparkFabrikProj</title>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <nav class="row nav">
+                <div class="col-6 col-md-4 d-flex justify-content-md-center justify-content-start align-items-center">
+                    <div class="logo">
+                        <i class="fa-solid fa-anchor"></i>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-flex justify-content-center align-items-center">
+                    <ul id="nav__links" class="nav__links"></ul>
+                    <ul id="nav__categoriesContainer" class="nav__categoriesContainer"></ul>
+                </div>
+                <!-- desktop view -->
+                <div class="col-6 col-md-4 d-none d-md-flex justify-content-md-center justify-content-end align-items-center">
+                    <button class="button">Contacts</button>
+                </div>
+                <!-- mobile view-->
+                <div class="col-6 d-flex d-md-none justify-content-end align-items-center">
+                    <div id="hamburgher" class="nav__hamburger">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </div>
+                </div>
+                <!-- first sidebar -->
+                <div id="sidebarMain" class="sidebar hidden">
+                    <div class="sidebar__content">
+                        <div class="sidebar__header">
+                            <div class="logo">
+                                <i class="fa-solid fa-anchor"></i>
+                            </div> 
+                            <div id="sidebar__close" class="sidebar__close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <ul id="sidebar__list" class="sidebar__list"></ul>
+                        <button class="button">Contacts</button>
+                    </div>
+                </div>
+                <!-- secondary sidebar -->        
+                <div id="sidebarSub" class="sidebarSub hidden">
+                    <div class="sidebarSub__content">
+                        <div class="sidebarSub__header">
+                            <div class="logo">
+                                <i class="fa-solid fa-anchor"></i>
+                            </div> 
+                            <div id="sidebarSub__close" class="sidebarSub__close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <i id="rollback" class="fa-solid fa-caret-left rollback"></i>
+                        <ul id="sidebarSub__list" class="sidebarSub__list"></ul>
+                        <button class="button">Contacts</button>
+                    </div>
+                </div>
+            </nav>  
+        </header>
+
+        <section id="heroSection" class="heroSection">
+            <img src="./Hero.png" class="" alt="Hero header image">
+            <div class="heroContent">
+                <h1>Chantey Yard mutiny gar </h1>
+                <div>
+                    <p>Pirate ipsum arrgh bounty warp jack. Ballast sink nipperkin shot execution jones' fluke spyglass blimey mutiny. Boom spanish bow piracy boatswain jack locker keelhaul pirate lass. Main yellow tender chains rig jack gold the. Blossom down boatswain round across tea pink bounty shot. Main aft keelhaul cog sail bilge heave pounders. Hang pink tails bilged brace. Jolly reef chains spanker coxswain blow chain chain. O'nine ketch heave boat sloop tales cog league. Swab ballast down spot league hang clipper pounders to. Nest pink heave brethren shrouds rat nest spot.</p>
+                    <p>Corsair bilge tales belay starboard schooner weigh. Gaff on yer six seven or. Topsail brace maroon hearties landlubber aye gangplank topgallant. Coast black cat salmagundi schooner chain a tell sloop hogshead. Heave crimp jones' smartly heave hang gaff pounders. Gabion yarr tender main spanish topgallant. Splice chain mizzen piracy her. Quarterdeck sloop nest yellow yer bilged yellow belay hearties yawl. Yellow lee quarterdeck deck chase blimey. Bilge man corsair yawl boatswain hearties yellow main. Line roger execution arr topmast the. Grog warp line aft tails.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="shipsSection" class="shipsSection">
+            <img src="/Ships.png" alt="ShipsContentImg">
+            <div class="shipsSection__contentContainer">
+                <h3>SHIPS</h3>
+                <div>
+                    <p>Pirate ipsum arrgh bounty warp jack. Tender smartly jack overhaul killick tender. Fleet driver to fluke bilge gangway. Chase nipperkin just mutiny spanish hang me quarterdeck heave. Coxswain jones' bow bilged clipper spyglass league chantey crack spyglass. Bilge six measured fleet on. Seven blossom blossom overhaul crow's chantey salmagundi chandler. </p>
+                    <p>Corsair cat gunwalls jack seas. Arr hands aft prey rat. Boom maroon just locker chase. Pounders jack jib scurvy plate bilged. Chandler coxswain jolly ketch crack yer chains locker warp brig. Killick warp ensign heave or avast jack. Reef brethren round hail-shot topmast fleet roger topgallant men nipper. Seven yer driver sloop ensign shot.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="parrotSection" class="parrotSection">
+            <img src="/Parrot.png" alt="ParrotContentImg">
+            <div class="parrotSection__contentContainer">
+                <h3>Parrot</h3>
+                <div>
+                    <p>Pirate ipsum arrgh bounty warp jack. Tender smartly jack overhaul killick tender. Fleet driver to fluke bilge gangway. Chase nipperkin just mutiny spanish hang me quarterdeck heave. Coxswain jones' bow bilged clipper spyglass league chantey crack spyglass. Bilge six measured fleet on. Seven blossom blossom overhaul crow's chantey salmagundi chandler. </p>
+                    <p>Corsair cat gunwalls jack seas. Arr hands aft prey rat. Boom maroon just locker chase. Pounders jack jib scurvy plate bilged. Chandler coxswain jolly ketch crack yer chains locker warp brig. Killick warp ensign heave or avast jack. Reef brethren round hail-shot topmast fleet roger topgallant men nipper. Seven yer driver sloop ensign shot.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventsSection" class="eventsSection">
+            <div class="eventsSection__contentContainer">
+                <h2>Events</h2>
+                <div id="cardContainer" class="eventsSection__cardContainer d-none d-md-grid"></div>
+                <div class="eventsSection__splideContainer d-md-none">
+                    <div id="image-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list" id="splideList"></ul>
+                        </div>
+                    </div>
+                    <div class="splideArrows d-md-none">
+                        <button class="splideArrows__prev"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="splideArrows__next"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeLineSection" class="timeLineSection">
+            <h2>Timeline</h2>
+            <div id="timeContainer" class="timeLineSection__container"></div>
+        </section>
+
+        <footer id="footerSection" class="container-fluid bg-dark footerSection">
+            <div class="row">
+                <div class="col-6 col-md-4 d-flex justify-content-md-center justify-content-start align-items-center">
+                    <div class="logo">
+                        <i class="fa-solid fa-anchor"></i>
+                    </div> 
+                </div>
+                <div class="col-6 col-md-4 d-flex justify-content-md-center justify-content-end align-items-center footerSection__socialContainer">
+                    <i class="fa-solid fa-icons"></i>
+                    <i class="fa-solid fa-video"></i>
+                    <i class="fa-solid fa-ghost"></i>
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-flex justify-content-center align-items-center">
+                    <button class="button">Contacts</button>
+                </div>  
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>

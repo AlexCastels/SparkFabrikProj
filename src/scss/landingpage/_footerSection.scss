@@ -1,0 +1,15 @@
+.footerSection {
+    padding: 1rem;
+
+    &__socialContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        i {
+            color: $primary;
+            font-size: 2rem;
+        }
+    }
+}

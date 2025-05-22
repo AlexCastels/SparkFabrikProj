@@ -1,0 +1,48 @@
+.parrotSection {
+    height: 600px;
+    width: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__contentContainer {
+        position: absolute;
+        top: 0px;
+        left: 12rem;
+        height: 100%;
+        width: 650px;
+        background-color: #e8ba31e2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem;
+        gap: 2rem;
+
+        h3 {
+            font-weight: 600;
+        }
+    }
+
+    @media (max-width: $screen-xs) {
+        height: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            height: 25rem;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        &__contentContainer {
+            position: static;
+            width: 100%;
+        }
+    }
+}
