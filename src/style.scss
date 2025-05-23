@@ -6,13 +6,13 @@
 @import "/src/scss/component/logo.scss";
 @import "/src/scss/component/card.scss";
 
-@import "/src/scss/landingpage/header.scss";
-@import "/src/scss/landingpage/heroSection.scss";
-@import "/src/scss/landingpage/shipsSection.scss";
-@import "/src/scss/landingpage/parrotSection.scss";
-@import "/src/scss/landingpage/eventsSection.scss";
-@import "/src/scss/landingpage/timeLineSection.scss";
-@import "/src/scss/landingpage/footerSection.scss";
+@import "app/landingpage/component/header/header.scss";
+@import "app/landingpage/component/heroSection/heroSection.scss";
+@import "app/landingpage/component/shipsSection/shipsSection.scss";
+@import "app/landingpage/component/parrotSection/parrotSection.scss";
+@import "app/landingpage/component/eventSection/eventsSection.scss";
+@import "app/landingpage//component/timeLineSection/timeLineSection.scss";
+@import "app/landingpage/component/footerSection/footerSection.scss";
 
 * {
     margin: 0;
